@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div id="header-section">
+        <h2 class="text-center pt-5 mb-2 text-uppercase heading-info" id="page-heading">Peter Lynch</h2>
+        <h6 class="text-center mb-4 text-uppercase heading-info" id="sub-heading">Photography</h6>
+        <div class="mt-2 pb-5 mb-5 text-center">
+            <a href="https://twitter.com/peterlynch96" class="mx-3" target="_blank"><i class="fab fa-twitter icon-details"></i></a>
+            <a href="https://www.instagram.com/peter_lynch96/" class="mx-3" target="_blank"><i class="fab fa-instagram icon-details"></i></a>
+            <a href="https://www.facebook.com/peter.lynch.1276" class="mx-3" target="_blank"><i class="fab fa-facebook-f icon-details"></i></a>
+            <a href="https://wakelet.com/@peterlynch96" class="mx-3" target="_blank"><i class="fas fa-pen" id="pen-icon"></i></a>
+        </div>
+    </div>
+    <div class="photo-gallery mt-4">
+        <div class="container-fluid">
+            <div class="intro"></div>
+            <div class="row photos">
+                {% for photo in photos %}
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                        <a href="{{ photo.image.url }}" data-lightbox="photos" data-download-url="true">
+                            <img src="{{ photo.image.url }}" class="img-fluid">
+                            <!-- <img src="{{ MEDIA_URL }}{{ photo.image }}" class="img-fluid"> -->
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
