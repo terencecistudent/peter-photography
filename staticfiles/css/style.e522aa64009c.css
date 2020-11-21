@@ -1,0 +1,110 @@
+/*
+    HEADINGS
+*/
+.h2,
+.icon-details,
+.icon-details i,
+h2 {
+    text-align: center
+}
+
+#header-section {
+    background-color: #d3d3d378;
+    overflow-wrap: break-word;
+}
+
+.heading-info {
+    letter-spacing: 0.8rem;
+    font-family: 'Playfair Display', serif;
+}
+
+/*
+    PHOTO GALLERY
+*/
+.photo-gallery {
+    color: #313437;
+    background-color: #fff
+}
+
+.photo-gallery p {
+    color: #7d8285
+}
+
+.photo-gallery h2 {
+    font-weight: 700;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit
+}
+
+@media (max-width:767px) {
+    .photo-gallery h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px
+    }
+}
+
+.photo-gallery .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 40px
+}
+
+.photo-gallery .intro p {
+    margin-bottom: 0
+}
+
+.photo-gallery .photos {
+    padding-bottom: 20px
+}
+
+.photo-gallery .item {
+    padding-bottom: 30px
+}
+
+/*
+    IMAGES
+*/
+img {
+    border-radius: 0.2rem;
+    transition: all .2s ease-in-out;
+    box-shadow: 0 0 0.6rem #545454;
+}
+
+img:hover {
+    opacity: 0.5;
+    transform: scale(1.02);
+}
+
+/*
+    ICONS
+*/
+.icon-details {
+    color: black;
+    font-size: 17px;
+}
+
+.icon-details::before {
+    text-decoration-line: none;
+}
+
+.icon-details:hover {
+    color: rgb(78, 78, 78);
+    font-size: 20px;
+    text-decoration-line: none;
+}
+
+#pen-icon {
+    color: black;
+    border: 0.1px solid rgba(73, 73, 73, 0.5);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#pen-icon:hover {
+    color: rgb(78, 78, 78);
+    border: 0.1px solid rgb(78, 78, 78);
+    border-radius: 5px;
+    padding: 3px;
+}
