@@ -14,6 +14,7 @@ import os
 from pathlib import Path
 import dj_database_url
 import django_heroku
+import mimetypes
 import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -154,6 +155,8 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 MEDIA_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
 
+
+mimetypes.add_type('text/css', '.css', True)
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
