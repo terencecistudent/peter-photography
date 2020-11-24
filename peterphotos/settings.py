@@ -29,7 +29,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['peterlynch-photograph.herokuapp.com', '127.0.0.1']
 
@@ -126,6 +126,23 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+
+LOGGING = {
+   'version': 1,
+   'disable_existing_loggers': False,
+   'handlers': {
+       'console': {
+           'class': 'logging.StreamHandler',
+       },
+   }, 
+   'loggers': {
+       'django': {
+           'handlers': ['console'],
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
+       },
+   },
+}
 
 
 AWS_S3_OBJECT_PARAMETERS = {
