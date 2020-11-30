@@ -6,7 +6,9 @@
 This is a photo gallery website that displays photographs taken by a friend of mines.  Images are displayed in rows of 4 with continuous columns.  Users are able to hover over and click on an image to bring up a larger version of the image.  Users can scroll through the images by pressing either the right and left arrows, or by clicking on the arrows on each side of the image.  The photographer's social media profiles are connected to icons at the top of the page.
 
 ## Wireframes
-To complete...
+I have used Bootstrap Studio to create wireframes:
+
+[Wireframes](https://github.com/terencecistudent/peter-photography/blob/master/Website%20Responsive%20Sizes.pdf)
 
 ## UX
 ### User Stories
@@ -235,7 +237,9 @@ I have carried out manual tests on User Stories No. 1-4.
 [Manual Tests](https://github.com/terencecistudent/peter-photography/blob/master/Manual%20Tests.pdf)
 
 ### Responsiveness On Different Devices Tests:
-[Responsive Tests](https://github.com/terencecistudent/peter-photography/blob/master/Website%20Responsive%20Sizes.pdf)
+I have done tests of the website's responsiveness using both Google Chrome's and Microsoft Edge's Dev Tools.
+
+[Responsive Tests](https://github.com/terencecistudent/peter-photography/blob/master/Responsiveness-On-Different-Devices.pdf)
 
 ### Running Responsive Designs on Google Chrome:
 Here is a link how to run the application on a live server by configuring and exposing ports with GitPod:
